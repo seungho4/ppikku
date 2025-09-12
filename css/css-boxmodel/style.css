@@ -1,0 +1,49 @@
+.padding-box {
+  padding-left: 0.75rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+}
+
+.border-box {
+  border-radius: 2rem;
+  border-color: red;
+  border-width: 10px;
+  border-style: dashed;
+}
+
+span {
+  margin: 20px;
+}
+
+.margin-1 {
+  height: 100px;
+  background-color: lightblue;
+  margin-bottom: 100px;
+}
+.margin-2 {
+  height: 100px;
+  background-color: lightcoral;
+  margin-bottom: 200px;
+}
+.margin-3 {
+  height: 100px;
+  background-color: lightgreen;
+  margin-top: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 2rem;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+.border-box {
+  box-sizing: border-box;
+}

@@ -1,0 +1,25 @@
+.box-1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 2rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-10 {
+  left: 200px;
+  top: 100px;
+}
+
+.box-3 {
+  height: 200px;
+  width: 100%;
+  background-color: gray;
+}
+
+.fixed {
+  position: fixed;
+}
