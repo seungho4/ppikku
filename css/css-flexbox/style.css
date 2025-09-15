@@ -1,0 +1,116 @@
+.flex-container{
+  display: flex;
+
+height: 500px;
+width: 100vw;
+background-color: bisque;
+gap: 10px;
+}
+
+.d-row {
+  flex-direction: row;
+}
+.d-row-reverse{
+  /* 행, 역방향: 오른쪽 -> 왼쪽 */
+flex-direction: row-reverse;
+}
+.-col{
+  /* 열, 정방향 */
+flex-direction: column;
+}
+.d-col-reverse{
+  /* 열, 역방향 */
+flex-direction: column-reverse;
+}
+
+.flex-start{ 
+/* justify-contant 속성 */
+/* 주 축을 기준으로한 배치 방식 */
+justify-content: ;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+.space-around{
+justify-content: space-around;
+}
+.space-between{
+justify-content: space-between;
+}
+.space-evenly{
+justify-content: space-evenly;
+}
+
+.align-center{
+  /* 교차축 방향 중앙 정렬 */
+  align-items: center;
+}
+
+
+.flex-nowrap{
+  /* 너비(높이)보다
+  내부 아이템의 너비(높이) 합이 크면
+  내부 아이템의 너비(높이) 를 줄여서
+  한 줄에 배치
+   */
+  flex-nowrap: nowrap;
+}
+.flex-wrap {
+  /* 너비(높이)보다
+  내부 아이템의 너비(높이) 합이 크면
+  여러 줄 배치 
+  */
+  flex-wrap: wrap;
+}
+
+
+
+.box{
+  background-color: lightblue;
+  width: 100px;
+  height: 200px;
+  margin: 20px;
+  /* 플렉스 아이템은 별도의 dissplay를 설정x */
+  /* 왜냐하면 부모가 display flex 라면*/
+  /* 자동으로 플렉스 아이템 */
+}
+
+
+.big-box {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  
+}
+
+
+.align-self-center{
+align-self: center;
+}
+.aligm-self-end{
+.align-self: flex-end;
+}
+
+.basis-200 {
+  flex-basis: 200px;
+}
+
+.flex-grow-1{
+flex-grow: 1;
+}
+.flex-grow-2{
+  flex-grow: 2;
+}
+.flex-shrink-0{
+  flex-shrink: 0;
+}
+.flex-shrink-2{
+  flex-shrink: 2;
+}
+
+
+
