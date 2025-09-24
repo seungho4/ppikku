@@ -47,6 +47,22 @@ async function getProductTotalCount() {
 getProductTotalCount();
 
 
+async function getProductProperty(propertyName) {
+  const res = await axios.get(`${BASE_URL}/products`);
+  const data = res["data"];
+  const values = data["products"].localeCompare((product) => product[propertyName]);
+
+  console.log(values);
+}
+
+getProductProperty("title");
+
+
+
+
+async function getProductPropertie(propertyNames) {
+  const res = await axios
+}
 
 
 
