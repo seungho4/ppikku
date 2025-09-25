@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child">
+        <button id="button">클릭</button>
+      </div>
+    </div>
+    <script>
+      const parent = document.querySelector("#parent");
+      const child = document.querySelector("#child");
+      const button = document.querySelector("#button");
+
+      //3개의 요소에 addEventListner()로 핸들러 등록
+      //이벤트 type : 'click'
+      //이벤트 핸들러 : () => {consol.log("적당한 메세지")}
+      //addEventListner {capture: ture}
+
+      parent.addEventListener(
+        "click",
+        () => {
+          console.log("첫번째 div");
+        },
+        { capture: true }
+      );
+
+      child.addEventListener(
+        "click",
+        () => {
+          console.log("두번째 div");
+        },
+        { capture: true }
+      );
+
+      button.addEventListener(
+        "click",
+        () => {
+          console.log("세번째 div");
+        },
+        { capture: true }
+      );
+    </script>
+  </body>
+</html>
