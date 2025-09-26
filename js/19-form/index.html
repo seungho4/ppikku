@@ -30,18 +30,14 @@
         // 동일한지 확인하는 코드를 작성
         // 같으면 "같습니다"출력 / 다르면 "다릅니다" 출력
 
-const password = formTag["elements"]["password"]
-const password-confirm = formTag["elements"]["password-confirm"]
+        const password = formTag["elements"]["password"];
+        const passwordConfirm = formTag["elements"]["password-confirm"];
 
-if(password["value"] === passwordConfirm["value"]) {
-  console.log("같습니다");
-} else {
-console.log("다릅니다");
-}
-
-
-
-
+        if (password["value"] === passwordConfirm["value"]) {
+          console.log("같습니다");
+        } else {
+          console.log("다릅니다");
+        }
       });
     </script>
   </body>
